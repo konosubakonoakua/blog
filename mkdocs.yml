@@ -1,0 +1,76 @@
+site_name: Rafael's Blog
+
+repo_url: https://github.com/konosubakonoakua/blog
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.action.edit
+    - content.tooltips
+    #- navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.footer
+    #- navigation.tabs.sticky
+    - navigation.sections
+    #- navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    #- navigation.prune
+    - search.highlight
+  icon:
+    repo: material/github
+
+plugins:
+  - social
+  - tags
+  - search
+  # - macros
+  # - mkdocs-video
+  # - glgihtbox
+  # - optimize:
+  #     enabled: !ENV [CI, false]
+  - blog:
+      blog_toc: true
+      post_date_format: short
+      post_url_date_format: yyyy/MM/dd
+
+markdown_extensions:
+  - abbr
+  - tables
+  - def_list
+  - attr_list
+  - footnotes
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
