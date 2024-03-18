@@ -1,10 +1,20 @@
 site_name: Rafael's Blog
-
+site_description: Hello, world!
+site_url: https://konosubakonoakua.github.io/blog/
 repo_url: https://github.com/konosubakonoakua/blog
 
 theme:
   name: material
   custom_dir: overrides
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - content.code.copy
     - content.code.annotate
@@ -19,11 +29,12 @@ theme:
     #- navigation.tabs.sticky
     #- navigation.expand
     #- navigation.instant
-    - toc.follow
     - navigation.top
-    - search.suggest
     #- navigation.prune
+    - toc.follow
+    - search.suggest
     - search.highlight
+    - search.share
   icon:
     repo: material/github
 
@@ -39,7 +50,7 @@ plugins:
   - blog:
       blog_toc: true
       post_date_format: short
-      post_url_date_format: yyyy/MM/dd
+      post_url_date_format: yyyy-MM-dd
 
 markdown_extensions:
   - abbr
@@ -74,3 +85,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+#############################################################
+#############################################################
+#############################################################
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md

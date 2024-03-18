@@ -1,16 +1,19 @@
 ---
 authors:
   - rafael
-title: Blog of Blog
+title: Makedocs Setup
 description: blog of setup
 date:
-  created: 2024-01-24
-  updated: 2024-01-24
+  2024-01-31
 categories:
   - Setup
 comments:
   true
+hide:
+  - navigation
+  - toc
 ---
+
 # Setup blog
 
 !!! example
