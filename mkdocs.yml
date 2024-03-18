@@ -11,14 +11,14 @@ theme:
     - content.code.select
     - content.action.edit
     - content.tooltips
-    #- navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.footer
-    #- navigation.tabs.sticky
     - navigation.sections
-    #- navigation.expand
     - navigation.indexes
+    #- navigation.tabs.sticky
+    #- navigation.expand
+    #- navigation.instant
     - toc.follow
     - navigation.top
     - search.suggest
