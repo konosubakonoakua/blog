@@ -6,10 +6,10 @@ repo_url: https://github.com/konosubakonoakua/blog
 theme:
   name: material
   custom_dir: overrides
-  palette: 
+  palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       toggle:
@@ -26,11 +26,11 @@ theme:
     - navigation.footer
     - navigation.sections
     - navigation.indexes
-    #- navigation.tabs.sticky
-    #- navigation.expand
-    #- navigation.instant
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.instant
     - navigation.top
-    #- navigation.prune
+    - navigation.prune
     - toc.follow
     - search.suggest
     - search.highlight
@@ -85,12 +85,187 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        #############################################################
+        #############################################################
+        #############################################################
 
-#############################################################
-#############################################################
-#############################################################
 
 nav:
   - Home: index.md
   - Blog:
-    - blog/index.md
+      - blog/index.md
+  - Notes:
+      -[EPICS] epics learning: notes/posts/19#[EPICS] epics learning.md
+      -[linux][input] Fcitx5 intro: notes/posts/20#[linux][input] Fcitx5 intro.md
+      -[hardware] opensource hardware list: notes/posts/21#[hardware] opensource hardware list.md
+      -[py][package] how-to package python projects: notes/posts/22#[py][package] how-to package python projects.md
+      -[hw] collections: notes/posts/23#[hw] collections.md
+      -[linux][sbc][raspi] materials: notes/posts/24#[linux][sbc][raspi] materials.md
+      -[protocol][usb] materials: notes/posts/25#[protocol][usb] materials.md
+      -[hw][soc][fpga] zynq7000 docs: notes/posts/26#[hw][soc][fpga] zynq7000 docs.md
+      -[sw][linux][video] v4l2 introduction: notes/posts/27#[sw][linux][video] v4l2 introduction.md
+      -[hw][usb][typec] usb typec power: notes/posts/28#[hw][usb][typec] usb typec power.md
+      -[hw][thermistor][ptc] thermistor temperature sensing application notes: notes/posts/29#[hw][thermistor][ptc] thermistor temperature sensing application notes.md
+      -[hw][pll] pll fundamental: notes/posts/30#[hw][pll] pll fundamental.md
+      -[sw][linux][docker] podman intro: notes/posts/31#[sw][linux][docker] podman intro.md
+      -[sw][linux][raspi] cross-compile linux kernel for raspberry pi: notes/posts/32#[sw][linux][raspi] cross-compile linux kernel for raspberry pi.md
+      -[hw][network][TSN] TSN intro: notes/posts/33#[hw][network][TSN] TSN intro.md
+      -[sw][network][mqtt] introduction for mqtt: notes/posts/34#[sw][network][mqtt] introduction for mqtt.md
+      -[sw][linux][pty][terminal] basics of linux terminal: notes/posts/35#[sw][linux][pty][terminal] basics of linux terminal.md
+      -[math] interactive math tutorials: notes/posts/36#[math] interactive math tutorials.md
+      -[physics][hep][beam] Zgoubi intro: notes/posts/37#[physics][hep][beam] Zgoubi intro.md
+      -[physics][hep] scientific softwares: notes/posts/38#[physics][hep] scientific softwares.md
+      -[physics][hep][beam][simulation] beam line simulation collections: notes/posts/39#[physics][hep][beam][simulation] beam line simulation collections.md
+      -[physics][hep][accelerator] particle accelerator reading materials: notes/posts/40#[physics][hep][accelerator] particle accelerator reading materials.md
+      -[hw][fpga] learning materials: notes/posts/41#[hw][fpga] learning materials.md
+      -[hw][arm][emulator] arm emulator collections: notes/posts/42#[hw][arm][emulator] arm emulator collections.md
+      -[sw][linux][drvier] linux driver model: notes/posts/43#[sw][linux][drvier] linux driver model.md
+      -[ebook] online publications: notes/posts/44#[ebook] online publications.md
+      -[ebook][linux] all about linux: notes/posts/45#[ebook][linux] all about linux.md
+      -[sw][linux] Online Source Code: notes/posts/46#[sw][linux] Online Source Code.md
+      -[hw][design][wiki] hardware design wiki collections: notes/posts/47#[hw][design][wiki] hardware design wiki collections.md
+      -[sw][linux][gnu][lib] gnu libs: notes/posts/48#[sw][linux][gnu][lib] gnu libs.md
+      -[tip][linux][shell] linux tips collections: notes/posts/49#[tip][linux][shell] linux tips collections.md
+      -[linux][kernel][qemu] qemu linux kernel development environment setup: notes/posts/50#[linux][kernel][qemu] qemu linux kernel development environment setup.md
+      -[linux][buildroot] buildroot intro: notes/posts/51#[linux][buildroot] buildroot intro.md
+      -[rtos][freertos] freerots collection: notes/posts/52#[rtos][freertos] freerots collection.md
+      -[sw][linux][build][makefile][make] makefile tutorials: notes/posts/53#[sw][linux][build][makefile][make] makefile tutorials.md
+      -[hw][sw][linux] WhyCan Forum: notes/posts/54#[hw][sw][linux] WhyCan Forum.md
+      -[ci][github][action][workflow] github action intro: notes/posts/55#[ci][github][action][workflow] github action intro.md
+      -[cpp][build][cmake][vcpkg] vcpkg tutorial: notes/posts/56#[cpp][build][cmake][vcpkg] vcpkg tutorial.md
+      -[sw][design pattern] introduction: notes/posts/57#[sw][design pattern] introduction.md
+      -[sw][py][dl][viz] visualization for deeplearning: notes/posts/58#[sw][py][dl][viz] visualization for deeplearning.md
+      -[sw][linux][kernel][driver] debugging tools: notes/posts/59#[sw][linux][kernel][driver] debugging tools.md
+      -[hw][power][mosfet][bjt] use BJT to drive MOSFET: notes/posts/60#[hw][power][mosfet][bjt] use BJT to drive MOSFET.md
+      -[hw][arm][fpga] axi bus: notes/posts/61#[hw][arm][fpga] axi bus.md
+      -[life][medical] collections: notes/posts/62#[life][medical] collections.md
+      -[hw][analog][simulator] collection: notes/posts/63#[hw][analog][simulator] collection.md
+      -[sw][programming][c][tutorial] classes in c: notes/posts/64#[sw][programming][c][tutorial] classes in c.md
+      -[sw][programming][py] python tutorial for scientists: notes/posts/66#[sw][programming][py] python tutorial for scientists.md
+      -[dev][env][setup] windows developer environment setup: notes/posts/67#[dev][env][setup] windows developer environment setup.md
+      -[dev][env][linux][linuxmint] linuxmint setup: notes/posts/68#[dev][env][linux][linuxmint] linuxmint setup.md
+      -[sw][tool][windows] mobaxterm font setup: notes/posts/69#[sw][tool][windows] mobaxterm font setup.md
+      -[sw][py] curve fitting: notes/posts/70#[sw][py] curve fitting.md
+      -[sw][py][github] python scripts to check network to github good or bad: notes/posts/71#[sw][py][github] python scripts to check network to github good or bad.md
+      -[math][dl][ai][python] deep-learning collections: notes/posts/72#[math][dl][ai][python] deep-learning collections.md
+      -[hw][arm][dsp] arm dsp collections: notes/posts/73#[hw][arm][dsp] arm dsp collections.md
+      -[hw][fpga] Xilinx ISE 14.7 setup: notes/posts/74#[hw][fpga] Xilinx ISE 14.7 setup.md
+      -[sw][linux][embedded] device-tree inside-out: notes/posts/75#[sw][linux][embedded] device-tree inside-out.md
+      -[hw][fpga][xilinx] ise 14.7 DLC9G usb-driver setup: notes/posts/76#[hw][fpga][xilinx] ise 14.7 DLC9G usb-driver setup.md
+      -[sw][linux][chroot][arm] chroot into arm target rootfs on x86_64 host os: notes/posts/77#[sw][linux][chroot][arm] chroot into arm target rootfs on x86_64 host os.md
+      -[sw][linux][raspi][ioc] Raspberry Pi setup: notes/posts/78#[sw][linux][raspi][ioc] Raspberry Pi setup.md
+      -[sw][python][windows] portable python on windows: notes/posts/79#[sw][python][windows] portable python on windows.md
+      -[hw][fpga] fpga flash download failed, M0_M1 setting: notes/posts/80#[hw][fpga] fpga flash download failed, M0_M1 setting.md
+      -[hw][fpga] ISE xilinx fpga, adjust configuration rate: notes/posts/81#[hw][fpga] ISE xilinx fpga, adjust configuration rate.md
+      -[sw][linux] linux_windows samba file share: notes/posts/82#[sw][linux] linux_windows samba file share.md
+      -[hw][fpga] openfpgaloader install: notes/posts/83#[hw][fpga] openfpgaloader install.md
+      -[sw][linux] docker engine (CE) install: notes/posts/84#[sw][linux] docker engine (CE) install.md
+      -[sw][linux] fcitx5 & rime pinyin input method install: notes/posts/85#[sw][linux] fcitx5 & rime pinyin input method install.md
+      -[sw][linux] change source mirror registry __: notes/posts/86#[sw][linux] change source mirror registry __.md
+      -[sw][linux] panel: notes/posts/87#[sw][linux] panel.md
+      -[sw][linux] utils tools: notes/posts/88#[sw][linux] utils tools.md
+      -[sw][linux][xilinx][fpga] petalinux use sstate-cache: notes/posts/89#[sw][linux][xilinx][fpga] petalinux use sstate-cache.md
+      -[sw][linux][command] tar multithread: notes/posts/90#[sw][linux][command] tar multithread.md
+      -[sw][linux][sys][network] linux network setting: notes/posts/91#[sw][linux][sys][network] linux network setting.md
+      -[sw][linux] ubuntu 22 settings: notes/posts/92#[sw][linux] ubuntu 22 settings.md
+      -[hw][fpga] linux Vivado 2019.1 setup: notes/posts/93#[hw][fpga] linux Vivado 2019.1 setup.md
+      -[sw][fpga][xilinx] vivado & petalinux 2024.1 install on linux: notes/posts/94#[sw][fpga][xilinx] vivado & petalinux 2024.1 install on linux.md
+      -[sw][linux][windows][ics] share personal network to network switch: notes/posts/95#[sw][linux][windows][ics] share personal network to network switch.md
+      -[sw][instrument][visa][ni] when ni-visa interactive control can not found devices: notes/posts/96#[sw][instrument][visa][ni] when ni-visa interactive control can not found devices.md
+      -[hw][fpga][xilinx] petalinux 2019.1 setup: notes/posts/97#[hw][fpga][xilinx] petalinux 2019.1 setup.md
+      -[hw][sw][zynq][xilinx][fpga][linux] petalinux workflow: notes/posts/98#[hw][sw][zynq][xilinx][fpga][linux] petalinux workflow.md
+      -[sw][linux] auto-reconnect to serial port at `_dev_ttyUSB_`: notes/posts/99#[sw][linux] auto-reconnect to serial port at `_dev_ttyUSB_`.md
+      -[sw][fpga][xilinx][petalinux] customizing PYNQ: notes/posts/100#[sw][fpga][xilinx][petalinux] customizing PYNQ.md
+      -[hw][vga][dvi] video display dummies: notes/posts/101#[hw][vga][dvi] video display dummies.md
+      -[sw][linux][ubuntu] remote desktop on ubuntu: notes/posts/102#[sw][linux][ubuntu] remote desktop on ubuntu.md
+      -[sw][vm][linux] virtualbox shared folder on windows: notes/posts/103#[sw][vm][linux] virtualbox shared folder on windows.md
+      -[sw][hw][visa][instrument] learn Test-and-Measurement-Protocols: notes/posts/104#[sw][hw][visa][instrument] learn Test-and-Measurement-Protocols.md
+      -[hw][fpga] digilent jtag driver setup on windows: notes/posts/105#[hw][fpga] digilent jtag driver setup on windows.md
+      -[sw][virtual machine] vmware install on windows: notes/posts/106#[sw][virtual machine] vmware install on windows.md
+      -[sw][xilinx] matlab version for vivado model system generator: notes/posts/107#[sw][xilinx] matlab version for vivado model system generator.md
+      -[sw][linux] ubuntu22 setup: notes/posts/108#[sw][linux] ubuntu22 setup.md
+      -[sw][hw][pcb][kicad] kicad memos: notes/posts/109#[sw][hw][pcb][kicad] kicad memos.md
+      -[sw][epics] phoebus & epics ca tool: notes/posts/110#[sw][epics] phoebus & epics ca tool.md
+      -[sw][scoop][windows] scoop usage: notes/posts/111#[sw][scoop][windows] scoop usage.md
+      -[sw][windows] change locale to solve chinese app display issue: notes/posts/112#[sw][windows] change locale to solve chinese app display issue.md
+      -[hw][zynq][fpga][xilinx] pinout definitions: notes/posts/113#[hw][zynq][fpga][xilinx] pinout definitions.md
+      -[hw][reverse engineering] automotive camera pcb board reverse engineering -- mpsoc jtag & boot mode: notes/posts/114#[hw][reverse engineering] automotive camera pcb board reverse engineering -- mpsoc jtag & boot mode.md
+      -[hw][fpga][xilinx] xilinx fpga architecure (inside): notes/posts/115#[hw][fpga][xilinx] xilinx fpga architecure (inside).md
+      -[sw][epics] epics installation: notes/posts/116#[sw][epics] epics installation.md
+      -[sw][linux] systemd autostart user script after reboot (without root): notes/posts/117#[sw][linux] systemd autostart user script after reboot (without root).md
+      -[sw][python][uv][venv] setup venvs for python using uv: notes/posts/118#[sw][python][uv][venv] setup venvs for python using uv.md
+      -[sw][windows] listary settings: notes/posts/119#[sw][windows] listary settings.md
+      -[sw][linux] awsome oneliners: notes/posts/120#[sw][linux] awsome oneliners.md
+      -[sw][windows] windows 11 optimization: notes/posts/121#[sw][windows] windows 11 optimization.md
+      -[hw][motherboard] ROG B550-i Gaming Setup: notes/posts/122#[hw][motherboard] ROG B550-i Gaming Setup.md
+      -[sw][linux] ssh config: notes/posts/123#[sw][linux] ssh config.md
+      -[blog] works in IMPCAS: notes/posts/124#[blog] works in IMPCAS.md
+      -[sw][py][linux][i2c] python & i2c [WIP]: notes/posts/125#[sw][py][linux][i2c] python & i2c [WIP].md
+      -[sw][epics] epics notes: notes/posts/126#[sw][epics] epics notes.md
+      -[hw] instrument intro: notes/posts/127#[hw] instrument intro.md
+      -[sw][vim] neovim lazyvim setup: notes/posts/128#[sw][vim] neovim lazyvim setup.md
+      -[sw][hw][zynq] Reserved Memory Access: notes/posts/129#[sw][hw][zynq] Reserved Memory Access.md
+      -[sw][hw] custom rootfs for zynq7000: notes/posts/130#[sw][hw] custom rootfs for zynq7000.md
+      -[sw][linux][raspi][ioc] Orange Pi Zero setup: notes/posts/131#[sw][linux][raspi][ioc] Orange Pi Zero setup.md
+      -[hw] jtag trouble shoot: notes/posts/132#[hw] jtag trouble shoot.md
+      -[hw] open source altium footprint libraries: notes/posts/133#[hw] open source altium footprint libraries.md
+      -[epics] setup epics on radxa zero 3e with dietpi installed: notes/posts/134#[epics] setup epics on radxa zero 3e with dietpi installed.md
+      -[epics] raspberry pi zero 2w setup: notes/posts/135#[epics] raspberry pi zero 2w setup.md
+      -[epics] epics prebuilt: notes/posts/136#[epics] epics prebuilt.md
+      -[epics][py] pythonsoftioc: notes/posts/137#[epics][py] pythonsoftioc.md
+      -[fpga] vivado issues: notes/posts/138#[fpga] vivado issues.md
+      -[fpga][dma][axi] xilinx axi dma uio: notes/posts/139#[fpga][dma][axi] xilinx axi dma uio.md
+      -[fpga][axi] AXI bus: notes/posts/140#[fpga][axi] AXI bus.md
+      -[fpga][uart] xilinx zynq uartlite setup: notes/posts/141#[fpga][uart] xilinx zynq uartlite setup.md
+      -[fpga][xilinx] fifo: notes/posts/142#[fpga][xilinx] fifo.md
+      -[fpga][cache] cache intro: notes/posts/143#[fpga][cache] cache intro.md
+      -[fpga][xilinx][ip] datamover: notes/posts/144#[fpga][xilinx][ip] datamover.md
+      -[fpga][ddr] ddr dram: notes/posts/145#[fpga][ddr] ddr dram.md
+      -[fpga] fpga readings: notes/posts/146#[fpga] fpga readings.md
+      -[fpga][xilinx] bram: notes/posts/147#[fpga][xilinx] bram.md
+      -[fpga] protocols: notes/posts/148#[fpga] protocols.md
+      -[fpga] vivado & git: notes/posts/149#[fpga] vivado & git.md
+      -[proxy] win & linux proxy setting: notes/posts/150#[proxy] win & linux proxy setting.md
+      -[fpga] petalinux fpga manager: notes/posts/151#[fpga] petalinux fpga manager.md
+      -[fpga] petalinux issues: notes/posts/152#[fpga] petalinux issues.md
+      -[fpga][zynq] petalinux devmem: notes/posts/153#[fpga][zynq] petalinux devmem.md
+      -[fpga][zynq][yacto] petalinux meta-xilinx: notes/posts/154#[fpga][zynq][yacto] petalinux meta-xilinx.md
+      -[linux] embedded linux tips: notes/posts/155#[linux] embedded linux tips.md
+      -[fpga] manchester encoding: notes/posts/156#[fpga] manchester encoding.md
+      -[python] async: notes/posts/157#[python] async.md
+      -[epics] epics ioc example notes: notes/posts/158#[epics] epics ioc example notes.md
+      -[epics] EPICS Application Developer_s Guide: notes/posts/159#[epics] EPICS Application Developer_s Guide.md
+      -[epics] epics logging system: notes/posts/160#[epics] epics logging system.md
+      -[circuit] analog circuit design readings: notes/posts/161#[circuit] analog circuit design readings.md
+      -[fpga] vivado tcl workflow: notes/posts/162#[fpga] vivado tcl workflow.md
+      -[fpga][xilinx][jtag] jtag debugbridge & xvc server: notes/posts/163#[fpga][xilinx][jtag] jtag debugbridge & xvc server.md
+      -[fpga][hw] digilent PMODS: notes/posts/164#[fpga][hw] digilent PMODS.md
+      -[fpga][xilinx] vivado_petalinux 2021.x setup notes: notes/posts/165#[fpga][xilinx] vivado_petalinux 2021.x setup notes.md
+      -[linux] ubuntu 18 setup: notes/posts/166#[linux] ubuntu 18 setup.md
+      -[github] markdown format: notes/posts/167#[github] markdown format.md
+      -[zynq][linux] linux kernel modules for zynq: notes/posts/168#[zynq][linux] linux kernel modules for zynq.md
+      -[epics] epics issues: notes/posts/169#[epics] epics issues.md
+      -[git] git tips: notes/posts/170#[git] git tips.md
+      -[fpga] synopsys 2018 setup: notes/posts/171#[fpga] synopsys 2018 setup.md
+      -[epics] MEDM setup: notes/posts/172#[epics] MEDM setup.md
+      -[win] surface restore: notes/posts/173#[win] surface restore.md
+      -[qt] qt setup: notes/posts/174#[qt] qt setup.md
+      -[epics] epics opi: notes/posts/175#[epics] epics opi.md
+      -[zynq] interrupt on zynq: notes/posts/176#[zynq] interrupt on zynq.md
+      -[dl] deepwiki collections: notes/posts/177#[dl] deepwiki collections.md
+      -[java] jdk archives: notes/posts/178#[java] jdk archives.md
+      -[ref] code references: notes/posts/179#[ref] code references.md
+      -[ref] hw refs: notes/posts/180#[ref] hw refs.md
+      -[zynq][linux] petalinux yacto: notes/posts/181#[zynq][linux] petalinux yacto.md
+      -[win] windows issues: notes/posts/182#[win] windows issues.md
+      -[tutor] English learning: notes/posts/183#[tutor] English learning.md
+      -[pcie] tutorial: notes/posts/184#[pcie] tutorial.md
+      -[tool] utility tools: notes/posts/185#[tool] utility tools.md
+      -[hdl] python hdl migen amaranth: notes/posts/186#[hdl] python hdl migen amaranth.md
+      -[fpga] timming: notes/posts/187#[fpga] timming.md
+      -[vpn] clash verge: notes/posts/188#[vpn] clash verge.md
+      -[math] wolfram setup: notes/posts/189#[math] wolfram setup.md
+      -[i2c][uart] uart to i2c bridge chip sc18im704 setup: notes/posts/190#[i2c][uart] uart to i2c bridge chip sc18im704 setup.md
+      -[vm] virtualbox setup: notes/posts/191#[vm] virtualbox setup.md
+      -[zynq] petalinux 2024.2 setup: notes/posts/192#[zynq] petalinux 2024.2 setup.md
+      -[hw][fpga] STA: notes/posts/193#[hw][fpga] STA.md
